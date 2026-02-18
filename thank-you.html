@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | The Mirror</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --gold: #D4AF37;
+            --grey: #888888;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            min-height: 100%;
+            background: radial-gradient(circle at center, #111 0%, #000 80%);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 16px;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 6vw, 4rem);
+            line-height: 1.1;
+        }
+
+        p {
+            margin: 0;
+            color: var(--grey);
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            line-height: 1.7;
+            max-width: 720px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 32px;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            border: 1px solid var(--gold);
+            padding: 12px 18px;
+            transition: 0.25s;
+        }
+
+        a:hover {
+            background: var(--gold);
+            color: var(--black);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Thank you your signal has been received.</h1>
+            <p>More information will arrive in your inbox</p>
+            <a href="/">Return</a>
+        </section>
+    </main>
+</body>
+</html>
